@@ -31,7 +31,7 @@
     <button class="w3-btn w3-teal w3-hover-light-grey" onclick="window.location.href='index_mm.html'">Home</button>
     <button class="w3-btn w3-teal w3-hover-light-grey" onclick="window.location.href='Add_Profile_mm.html'">Add Profile</button>
     <button class="w3-btn w3-teal w3-hover-light-grey"  onclick="window.location.href='View_Reports.html'">View Reports</button>
-    <button class="w3-btn w3-teal w3-hover-light-grey" onclick="window.location.href='scheduled.html'">Publish Posts</button>
+    <button class="w3-btn w3-teal w3-hover-light-grey" onclick="window.location.href='schedule.html'">Publish Posts</button>
     <button class="w3-btn w3-teal w3-hover-light-grey">View Feeds</button>
 </div>
 </div>
@@ -41,7 +41,7 @@
 
 
     <h5>Publish and Schedule Posts</h5>
-    <p>Publish posts to your social media profiles, or schedule a post to be uploaded at a certain time!</p>
+    <h5>Publish posts to your social media profiles, or schedule a post to be uploaded at a certain time!</h5>
   <button type="button" class="btn profile facebook"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i> </button>
   <button type="button" class="btn profile instagram"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></button>
   <button type="button" class="btn profile twitter"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></button>
@@ -57,24 +57,21 @@
         Post Type <span class="caret"></span>
       </button>
       <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">Status</a></li>
+        <li><a class="dropdown-item" href="#"onclick="document.getElementById('demo1').innerHTML = 'Enter Status Here'">Status</a></li>
         <li><a class="dropdown-item" href="#">Video</a></li>
         <li><a class="dropdown-item" href="#">Photo</a></li>
-        <li><a class="dropdown-item" href="#">Year</a></li>
       </ul>
     </div>
-
     <div class="dropdown">
-      <button type="button" class="btn dropdown-toggle option" data-toggle="dropdown"> 
+      <button type="button" class="btn dropdown-toggle option" data-toggle="dropdown">
         Time <span class="caret"></span></button>
         <ul class="dropdown-menu">
           <li><a class="dropdown-item" href="#">Now</a></li>
           <li><a class="dropdown-item" href="#">Tonight</a></li>
           <li><a class="dropdown-item" href="#">Tomorrow</a></li>
           <li><a class="dropdown-item" href="#">Next Week</a></li>
-        </ul>  
-      </div> 
-
+        </ul>
+      </div>
       <div class="dropdown">
         <button type="button" class="btn dropdown-toggle option" data-toggle="dropdown">
           Share to: <span class="caret"></span>
@@ -84,10 +81,9 @@
           <li><a class="dropdown-item" href="#">Friends</a></li>
           <li><a class="dropdown-item" href="#">Friends of friends</a></li>
         </ul>
-      </div> 
-
       </div>
-
+      </div>
+      <p id="demo1"></p>
       <div class="content-wrapper">
       <form action="/action_page.php">
         <label for="caption">Caption</label>
@@ -95,15 +91,12 @@
         <label for="hashtags">Hashtags</label>
         <input type="text" id="hashtags" placeholder="Hashtags here!">
       <div>
-       <button type="button" class="btn btn-success">Submit </button>
+       <button type="button" class="btn btn-success" onclick="document.getElementById('demo2').innerHTML = 'Your Post has been submitted successfully!'">Submit </button>
       </div>
       </form>
-      </div> 
- 
- 
+      </div>
+<p id="demo2"></p>
  </div>
-
-
 <div class="contact">
   <div class="content-wrapper">
   <p>Thanks for visiting! Get in contact with us via Facebook at <a href="https://www.facebook.com"> Socially</a></p>
